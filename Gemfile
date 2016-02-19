@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Gatekeeper Dependencies
 gem 'devise', github: 'plataformatec/devise'
+gem 'doorkeeper'
 
 # Environment Dependencies
 group :development do
