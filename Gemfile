@@ -12,6 +12,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
+# Gatekeeper Dependencies
+gem 'devise'
+
+# Environment Dependencies
 group :development do
   gem 'web-console', '~> 3.0'
 end
