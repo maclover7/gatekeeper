@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
   gem 'spring'
   gem 'sqlite3'
   gem 'web-console', '~> 3.0'
