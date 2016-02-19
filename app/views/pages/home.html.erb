@@ -1,4 +1,12 @@
-<h1 class="center">
-  Gatekeeper
-  <small>Official Authentication for Bernie 2016</small>
-</h1>
+<div class="center">
+  <h1>
+    Gatekeeper
+    <small>Official Authentication for Bernie 2016</small>
+  </h1>
+
+  <%= link_to new_user_registration_path do %>
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  <% end %>
+</div>
+
+<%= link_to "Log out", destroy_user_session_path, method: :delete %>
