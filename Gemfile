@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 # Gatekeeper Dependencies
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise'
 
 # Environment Dependencies
 group :development do
