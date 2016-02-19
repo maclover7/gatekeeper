@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_many :oauth_applications, class_name: 'Doorkeeper::Application', as: :owner
+
   def admin!
     self.admin = true
     self.save!
