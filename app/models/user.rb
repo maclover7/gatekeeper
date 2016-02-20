@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_many :oauth_applications, class_name: 'Doorkeeper::Application', as: :owner
 
+  validates_uniqueness_of :email
+
   def admin!
     self.admin = true
     self.save!

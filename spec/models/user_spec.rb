@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe User, :type => :model do
+  describe "validations" do
+    it { should validate_uniqueness_of(:email) }
+  end
+
   describe "#admin!" do
     it "changes a user to be an admin" do
       user = FactoryGirl.create(:user)

@@ -31,6 +31,7 @@ end
 group :test do
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'shoulda'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
