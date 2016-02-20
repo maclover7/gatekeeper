@@ -24,6 +24,8 @@ FactoryGirl.define do
 
   factory :user do |f|
     f.email { Faker::Internet.email }
+    f.first_name { Faker::Name.first_name }
+    f.last_name { Faker::Name.last_name }
     f.password "foobarfoobar"
     f.password_confirmation { |u| u.password }
     admin false

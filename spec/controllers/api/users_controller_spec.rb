@@ -24,7 +24,7 @@ RSpec.describe Api::UsersController, :type => :controller do
         post :create, format: :json, user: @user_attributes, application_id: @application.uid
         resp = JSON.parse(response.body)
 
-        expect(resp.keys).to eq(["id", "email", "created_at", "updated_at", "admin", "access_token"])
+        expect(resp.keys).to eq(["id", "email", "created_at", "updated_at", "admin", "first_name", "last_name", "access_token"])
         expect(resp["email"]).to eq(@user_attributes[:email])
         expect(resp["admin"]).to eq(@user_attributes[:admin])
       end
