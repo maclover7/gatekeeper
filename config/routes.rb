@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
+    post "/users" => "users#create"
     get "/users/me" => "users#me"
   end
 
