@@ -1,6 +1,7 @@
 module Api
   class BaseController < ::ApplicationController
     before_filter :doorkeeper_authorize!
+    protect_from_forgery with: :null_session
     respond_to :json
 
     protected
