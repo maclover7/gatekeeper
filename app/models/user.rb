@@ -16,4 +16,10 @@ class User < ApplicationRecord
   def admin?
     admin == true
   end
+
+  ## ONLY UNCOMMENT THE BELOW CODE IF A DATA
+  # MIGRATION IS TAKING PLACe
+  def password_required?
+    false
+  end
 end

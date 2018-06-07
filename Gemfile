@@ -22,7 +22,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
   gem 'rspec-rails'
   gem 'spring'
   gem 'sqlite3'
